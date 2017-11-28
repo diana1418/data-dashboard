@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 body{
   
@@ -24,6 +24,16 @@ button {
   padding: 5px;
   width: 40px;
 }
+
+/*second section*/
+#dataBlock div {
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  border: 2px solid blueviolet; 
+  margin: 2vh;
+}
+
 
 
 /*Footer*/
