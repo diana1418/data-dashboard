@@ -2,9 +2,90 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/icons/icomoon/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Data Dashboard</title>
   </head>
   <body>
+    <!--Encabezado de página-->
+    <header>
+      <nav>
+        <figure>
+          <img src="assets/images/logo-laboratoria.svg" alt="logo-laboratoria">
+        </figure>
+        <button class="icon-menu"></button>
+      </nav>
+    </header>
+
+    <!--Sección de toda la página-->
+    <!--Sección de filtros de Selección-->
+    <section>
+      <div class="container-selects">
+        <!--Seleccionando Sede-->
+        <form action="select-sede">
+          <label for="label">SEDE:</label>
+          <select name="sede" id="sede">
+            <option value="">Selecciona Sede...</option>
+            <option value="aqp">Arequipa</option>
+            <option value="cdmx">Ciudad de México</option>
+            <option value="lim">Lima</option>
+            <option value="scl">Santiago de Chile</option>
+          </select>
+        </form>
+        
+        <!--Seleccionando Promoción-->
+        <form action="select-prom">
+          <label for="label">PROMOCIÓN:</label>
+          <select name="prom" id="prom">
+            <option value="">Selecciona Promoción ...</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </form>
+        
+        <!--Seleccionando Rating-->
+        <form action="select-rating">      
+          <label for="label">RATING:</label>
+          <select name="ratings" id="ratings">
+            <option value="">Selecciona Ratings...</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </form>
+
+        <!--Seleccionando Estudiantes-->
+        <form action="select-students">       
+          <label for="label">ALUMNAS:</label>
+          <select name="students" id="students">
+            <option value="">Selecciona Estudiantes...</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </form>
+
+      </div>
+    </section>
+    <!--Fin Sección de Selecciones o filtros-->
+    
+    <!--Sección vistas de Dashboard-->
+    <section>
+      <div>
+        <!--AGREGA DATOS MEDIANTE DOM-->
+      </div>
+    </section>
+
+    <!--Footer-->
+    <!-- <footer>
+      <div>
+        <p>Copyritght © 2017</p>
+      </div>
+    </footer> -->
 
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
