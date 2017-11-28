@@ -1,3 +1,40 @@
-/*
- * Estilos de tu proyecto
- */
+/*Clases Reutilizables*/
+* {
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  
+}
+/*Clases Específicas*/
+/*Header*/
+nav {
+  border-bottom: 1px solid black;
+  padding: 2% 0 0 0;
+}
+
+img {
+  margin-left: 45%;
+  width: 200px;
+}
+
+button {
+  height: 30px;
+  padding: 5px;
+  width: 40px;
+}
+
+
+/*Footer*/
+footer {
+  background-color: #333447;
+  bottom: 0;
+  color: #fff;
+  height: max-content;
+  width: 100%;
+}
+footer div p{
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+}
