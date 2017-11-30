@@ -60,6 +60,26 @@ function addStudents(arrayStudentsAQP20162) {
 
 
 /* Agregando funcionalidad */
+google.charts.load('current', {packages: ['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var dataG = new google.visualization.DataTable();
+  dataG.addColumn('string', 'city');
+  dataG.addColumn('number', 'All students');
+  dataG.addRows(
+    [
+      ['s1', 60],
+      ['s2', 40],
+      ['s3', 50],
+    ]
+  );
+  var options = {'title': 'total de estudiantes en esta sede',
+    'width': 200,
+    'heigth': 200,
+  };
+  var graf = new google.visualization.AreaChart(document.getElementById('container-graph'));
+  graf.draw(dataG, options);
+}
 
 
 /* window.addEventListener('load', function() {
