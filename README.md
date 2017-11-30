@@ -26,7 +26,9 @@
 * El Net Promoter Score (NPS) promedio de los sprints cursados. El NPS se calcula en base a la encuesta que las estudiantes responden al respecto de la recomendación que darían de Laboratoria, bajo la siguiente fórmula:
 
 `[Promoters] = [Respuestas 9 o 10] / [Total respuestas] * 100`
+
 `[Passive] = [Respuestas 7 u 8] / [Total respuestas] * 100`
+
 `[Detractors] = [Respuestas entre 1 y 6] / [Total respuestas] * 100`
 
 `[NPS] = [Promoters] - [Detractors]`
