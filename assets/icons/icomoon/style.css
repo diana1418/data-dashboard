@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?sunnoj');
-  src:  url('fonts/icomoon.eot?sunnoj#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?sunnoj') format('truetype'),
-    url('fonts/icomoon.woff?sunnoj') format('woff'),
-    url('fonts/icomoon.svg?sunnoj#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ft4mx1');
+  src:  url('fonts/icomoon.eot?ft4mx1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ft4mx1') format('truetype'),
+    url('fonts/icomoon.woff?ft4mx1') format('woff'),
+    url('fonts/icomoon.svg?ft4mx1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-folder-plus:before {
+  content: "\41";
+}
+.icon-printer:before {
+  content: "\42";
+}
+.icon-floppy-disk:before {
+  content: "\43";
+}
 .icon-menu:before {
   content: "\40";
+}
+.icon-plus:before {
+  content: "\44";
+}
+.icon-cross:before {
+  content: "\45";
+}
+.icon-exit:before {
+  content: "\46";
 }
