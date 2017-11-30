@@ -15,7 +15,30 @@ add
 /*
  * Funcionalidad de tu producto
  */
+window.addEventListener('load', function() {
+  // Obteniendo los datos
+  var tabs = document.querySelectorAll('.tabs');
+  var paragraphs = document.querySelectorAll('.paragraphs');
+  // Muestra los contenedores
+  function toggleTab(elem) {
+    for (var i = 0; i < elem.length; i++) {
+      elem[i].addEventListener('click', showContainers);
+    }
+  }
+  function showContainers() {
+    for (var j = 0; j < parrafos.length; j++) {
+      if (this.dataset.text === parrafos[j].dataset.name) {
+        if (paragraphs[j].classList.contains('hidden')) {
+          paragraphs[j].classList.remove('hidden');
+        } 
+      } else {
+        paragraphs[j].classList.add('hidden');
+      }
+    }
+  }
 
+  toggleTab(tabs);
+});
 
 /* window.addEventListener('load', function() {
 
