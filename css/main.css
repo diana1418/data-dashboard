@@ -70,20 +70,6 @@ h2 {
   text-shadow: 1px 1px 2px #fff;
   position: relative;
 }
-/*
-h2:before {
-  content: '';
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  left: -19px;
-  top: 12px;
-  background-color: #868580;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
-}*/
-
 
 header {
   width:200px;
@@ -92,8 +78,6 @@ header {
   position:relative;
   z-index:99;  
 }
-
-
 
 a#user{
   color: #fff;
@@ -152,7 +136,8 @@ section {
 .column {
   background-color: #8dc7c7;
   color: #000;
-  height: 300px;
+  display: inline-block;
+  height: 335px;
   width: 300px;
 }
 
@@ -164,10 +149,15 @@ h3 {
   font-size: 20px;
 }
 
-.total {
+.total,
+.total-tech-skill,
+.porcent-tech-skill,
+.total-life-skill,
+.porcent-life-skill
+ {
   background-color: #fff;
   padding: 0 50px 55px;
-  margin: 0 10px 0 10px;
+  margin: 5px 10px 0 10px;
 }
 
 div#container-graph {
@@ -175,6 +165,30 @@ div#container-graph {
   height: 155px;
   width: 275px;
   margin: 25% 0% 0% 5%;
+}
+section:nth-child(3),
+section:nth-child(4) {
+  margin-left: 6%;
+}
+.container-tech-skills,
+.container-life-skills {
+  margin: 2% 10%;
+}
+
+.bgkc-skill {
+  background-color: #8dc7c7;
+  color: #000;
+  /*display: inline-block;*/
+  height: 335px;
+  width: 900px;
+  margin: 5px 10px;
+}
+
+div#container-graph-skill {
+  background-color: #fff;
+  height: 150px;
+  width: 800px;
+  margin: 8% 0% 0% 5%;
 }
 /*Footer*/
 /*footer {
