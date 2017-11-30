@@ -69,7 +69,6 @@ h2 {
   line-height: 60px;
   text-shadow: 1px 1px 2px #fff;
   position: relative;
-  -webkit-flex: 1;
 }
 /*
 h2:before {
@@ -127,8 +126,8 @@ a:hover {
 }
 
 .title {
-  background-color: #C0C1C0;
-  border-bottom: 1px solid #C0C1C0;
+  background-color: #f7b617;;
+  border-bottom: 1px solid #f7b617;;
   margin-top: 10px;
   height: 40px;
 }
@@ -138,10 +137,47 @@ figure {
   margin: 0 auto 0 auto;
 }
 
-/*Sections*/
+/*Estilos de Select*/
+.container-selects {
+  color: #000;
+  font-family:PT+Sans sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
 
+section {
+  margin: 30px;
+}
+/* Mostrando valores requeridos*/
+.column {
+  background-color: #8dc7c7;
+  color: #000;
+  height: 300px;
+  width: 300px;
+}
+
+h3 {
+  color: #000;
+  text-align: center;
+  font-family:PT+Sans sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.total {
+  background-color: #fff;
+  padding: 0 50px 55px;
+  margin: 0 10px 0 10px;
+}
+
+div#container-graph {
+  background-color: #fff;
+  height: 155px;
+  width: 275px;
+  margin: 25% 0% 0% 5%;
+}
 /*Footer*/
-footer {
+/*footer {
   background-color: #333447;
   bottom: 0;
   color: #fff;
@@ -152,3 +188,4 @@ footer div p{
   text-align: center;
   padding: 1em 1em 1em 1em;
 }
+*/
