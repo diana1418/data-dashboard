@@ -32,6 +32,32 @@ var sumCDMX = studentsPromo20171CDMX.length + studentsPromo20172CDMX.length;
 var sumLIM = studentsPromo20162LIM.length + studentsPromo20171LIM.length + studentsPromo20172LIM.length;
 var sumSCL = studentsPromo20162SCL.length + studentsPromo20171SCL.length + studentsPromo20172SCL.length;
 
+/* Arreglos de datos a mostrar */
+var arrayStudentsAQP20162 = data.AQP['2016-2']['students'];// devuelve un la lista deobjetos de cada estudiante
+
+addStudents(arrayStudentsAQP20162);
+
+/* Imprime en consola el total de alumnas activas y desertoras*/
+function addStudents(arrayStudentsAQP20162) { 
+  
+  var arrayStatus = [];
+
+  /* Guardando valores 'string' dentro de un arreglo */
+  for (var i = 0; i < arrayStudentsAQP20162.length; i++) {
+    arrayStatus.push(arrayStudentsAQP20162[i]['active']);
+    for (var j = 0; j < arrayStatus.length; j++) { 
+      var acumAssit = 0;
+      var acumDropout = 0;
+    
+      if (arrayStatus[j] === 'true') {
+        return acumAssit++;
+      } else {
+        return acumDropout++;
+      }
+    }
+  }
+}
+
 
 /* Agregando funcionalidad */
 
@@ -59,6 +85,4 @@ var sumSCL = studentsPromo20162SCL.length + studentsPromo20171SCL.length + stude
   }
 
   toggleTab(tabs);
-}); */
-
-
+})}; */
