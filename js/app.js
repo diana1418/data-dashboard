@@ -1,6 +1,4 @@
-
-/* Declarando variables */
-
+/* DECLARANDO VARIABLES */
 var containerTotalStudents = document.getElementsByClassName('container-total');
 var subSelectPromo = null;
 
@@ -10,27 +8,35 @@ var mexico = data.CDMX;
 var lima = data.LIM;
 var santiago = data.SCL;
 
- /* Arreglo de las promociones por sede */
+/* Arreglo de las promociones por sede */
 var promosAQP = Object.keys(arequipa); // ["2016-2", "2017-1"]
 var promosCDMX = Object.keys(mexico); // ["2017-1", "2017-2"]
 var promosLIM = Object.keys(lima); // ["2016-2", "2017-1", "2017-2"]
 var promosSCL = Object.keys(santiago); // ["2016-2", "2017-1", "2017-2"]
 
-/* suma de todas las estudiantes de las 2 promos de Arequipa */
-var suma = (Object.keys(data.AQP['2016-2'].students)).length + (Object.keys(data.AQP['2017-1'].students)).length;
+/* Número de estudiantes por sede y promo*/
+var studentsPromo20162AQP = Object.keys(data.AQP['2016-2'].students);// arreglo con el nro de estudiantes
+var studentsPromo20171AQP = Object.keys(data.AQP['2017-1'].students);
+var studentsPromo20171CDMX = Object.keys(data.CDMX['2017-1'].students);
+var studentsPromo20172CDMX = Object.keys(data.CDMX['2017-2'].students);
+var studentsPromo20162LIM = Object.keys(data.LIM['2016-2'].students);
+var studentsPromo20171LIM = Object.keys(data.LIM['2017-1'].students);
+var studentsPromo20172LIM = Object.keys(data.LIM['2017-2'].students);
+var studentsPromo20162SCL = Object.keys(data.SCL['2016-2'].students);
+var studentsPromo20171SCL = Object.keys(data.SCL['2017-1'].students);
+var studentsPromo20172SCL = Object.keys(data.SCL['2017-2'].students);
+
+/* Sumatoria del nro de Estudiantes por sede y promo */
+var sumAQP = studentsPromo20162AQP.length + studentsPromo20171AQP.length;
+var sumCDMX = studentsPromo20171CDMX.length + studentsPromo20172CDMX.length;
+var sumLIM = studentsPromo20162LIM.length + studentsPromo20171LIM.length + studentsPromo20172LIM.length;
+var sumSCL = studentsPromo20162SCL.length + studentsPromo20171SCL.length + studentsPromo20172SCL.length;
 
 
+/* Agregando funcionalidad */
 
-    // subSelectPromo = document.createElement('div');
-  // imagesContainer.appendChild(subSelectPromo);
- 
-  // for (var i = 0; i < arrayPromo.length; i++)
-  //   createImage(arrayPromo[i], sede);
 
-/*
- * Funcionalidad de tu producto
- */
-window.addEventListener('load', function() {
+/* window.addEventListener('load', function() {
   // Obteniendo los datos
   var tabs = document.querySelectorAll('.tabs');
   var paragraphs = document.querySelectorAll('.paragraphs');
@@ -53,23 +59,6 @@ window.addEventListener('load', function() {
   }
 
   toggleTab(tabs);
-});
-
-/* window.addEventListener('load', function() {
-
-
-  
-  var selectSede = document.getElementById('sede');
-
-  /*
-  //var subSelectSede = null;
-  sede.addEventListener('change', function() {
-    if (option.value) {
-      prom.addEventListener('change', function() {
-        data['option.value'];
-      });
-    }
-  });
- }) */
+}); */
 
 
