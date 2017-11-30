@@ -1,125 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/icons/icomoon/style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Data Dashboard</title>
-  </head>
-  <body>
-    <!--Encabezado de página-->
-    <header>
-      <nav>
-        <figure>
-          <img src="assets/images/logo-laboratoria.svg" alt="logo-laboratoria">
-        </figure>
-        <button class="icon-menu"></button>
-      </nav>
-    </header>
 
-    <!--Sección de toda la página-->
-    <!--Sección de filtros de Selección-->
-    <div class="container">
-    <section>
-      <div class="container-selects">
-        <!--Seleccionando Sede-->
-        <form action="select-sede">
-          <label for="label">SEDE:</label>
-          <select name="sede" id="sede">
-            <option value="">Selecciona Sede...</option>
-            <option value="aqp">Arequipa 2016-2</option>
-            <option value="aqp">Arequipa 2017-1</option>           
-            <option value="cdmx">Ciudad de México 2017-1</option>
-            <option value="cdmx">Ciudad de México 2017-2</option>            
-            <option value="lim">Lima 2016-2</option>
-            <option value="lim">Lima 2017-1</option>
-            <option value="lim">Lima 2017-2</option>            
-            <option value="scl">Santiago de Chile 2016-2</option>
-            <option value="scl">Santiago de Chile 2017-1</option>
-            <option value="scl">Santiago de Chile 2017-2</option>            
-          </select>
-        </form>
-        
-        <!--Seleccionando Rating-->
-        <!--form action="select-rating">      
-          <label for="label">RATING:</label>
-          <select name="ratings" id="ratings">
-            <option value="">Selecciona Ratings...</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </form>
-      -->
-      
-        <!--Seleccionando Estudiantes-->
-        <!--form action="select-students">       
-          <label for="label">ALUMNAS:</label>
-          <select name="students" id="students">
-            <option value="">Selecciona Estudiantes...</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </form>-->
+<head>
+  <meta charset="utf-8">
 
+  <link rel="stylesheet" href="assets/icons/icomoon/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Data Dashboard</title>
+</head>
 
-      </div>
-    </section>
-    <!--Fin Sección de Selecciones o filtros-->
+<body>
+  <span class="lateral-menu"></span>
+  <header>
+    <h1>Dashboard</h1>
+    <nav class="container-menu">
+      <ul>
+        <li>
+          <a href="#" data-title="projects"> Projects</a>
+        </li>
+        <li>
+          <a href="#" data-title="add-student"> Add Student</a>
+        </li>
+        <li>
+          <a href="#" data-title="remove-student"> Remove Student</a>
+        </li>
+        <li>
+          <a href="#" data-title="add-sprint"> Add Sprint</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <figure>
+      <img src="assets/images/logo-laboratoria.svg" alt="">
+    </figure>
+    <div class="title">
 
+      <h2></h2>
 
-    <!--Sección vistas de Dashboard-->
-    <section>
-      <div class="container2">
-        <div id="over" class="ovr" data-name='dataAll'>OVERVIEW</div>
-        <div id="stud" class="std" data>STUDENTS</div>
+      <a id="user" href="#">Hi Ana!</a>
+    </div>
 
-        <div class="block" id="dataBlock" data-name='dataAll'>
-          <div id="enrollment">
-            <h3>ENROLLMENT</h3>
-            <div id="currently">
-            <p># STUDENTS CURRENTLY <br> ENROLLED</p>
-            </div>
-            <div id="dropout"></div>
-            <div id="graphic1"></div>
-          </div>
-          <div id="achievement">
-              <h3>ENROLLMENT</h3>
-              <div id="target">
-              <p># STUDENTS THAT MEET <br> THE TARGET</p>
-              </div>
-              <div id="porcentage"></div>
-              <div id="graphic2"></div>
-          </div>
-          <div id="promoter">
-              <h3>NET PROMOTER SCORE</h3>
-              <div id="cumulative">
-               <p>% CUMULATIVE NPS</p>
-              </div>
-              <div id="porcent"></div>
-              <div id="graphic3"></div>
-            </div>            
-          <div id="tech">
-            <h3>TECH SKILLS</h3>
-          </div>
+    <article>
+      <section>
+        <div class="container-selects">
+          <!--Seleccionando Sede-->
+          <form action="select-sede">
+            <label for="label">SEDE:</label>
+            <select name="sede" id="sede">
+              <option value="">Selecciona Sede...</option>
+              <option value="aqp">Arequipa 2016-2</option>
+              <option value="aqp">Arequipa 2017-1</option>
+              <option value="cdmx">Ciudad de México 2017-1</option>
+              <option value="cdmx">Ciudad de México 2017-2</option>
+              <option value="lim">Lima 2016-2</option>
+              <option value="lim">Lima 2017-1</option>
+              <option value="lim">Lima 2017-2</option>
+              <option value="scl">Santiago de Chile 2016-2</option>
+              <option value="scl">Santiago de Chile 2017-1</option>
+              <option value="scl">Santiago de Chile 2017-2</option>
+            </select>
+          </form>
+    </article>
 
-        <!--AGREGA DATOS MEDIANTE DOM-->
-      </div>
-    </section>
-  </div>
-    <!--Footer-->
-    <!-- <footer>
+    <!--Datos del programa-->
+    <article class="container-data">
       <div>
-        <p>Copyritght © 2017</p>
+        <h3>Project 1
+          <span class="entypo-down-open"></span>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus iste quia incidunt ad provident ullam quo assumenda
+          expedita quae sapiente ipsa qui esse similique! Modi obcaecati natus sapiente quaerat omnis.</p>
       </div>
-    </footer> -->
 
-		<!-- Base de datos -->
-		<script src="./js/data.js"></script>
-		<!-- Aquí va tus archivos JS -->
-    <script src="./js/app.js"></script>
-  </body>
+    </article>
+  </main>
+
+
+
+
+
+  <!--Footer-->
+  <!--footer>
+    <div>
+      <p>Copyritght © 2017</p>
+    </div>
+  </footer-->
+  <!-- Fin footer-->
+
+  <!-- Base de datos -->
+  <script src="./js/data.js"></script>
+  <!-- Aquí va tus archivos JS -->
+  <script src="./js/app.js"></script>
+</body>
+
 </html>
